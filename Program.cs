@@ -16,8 +16,10 @@ namespace CSharpFun
             int numThrows = 0;
             numThrows = int.Parse(Console.ReadLine());
             Console.WriteLine("DICE ROLLING SIMULATION RESULTS \n Each * represents 1 % of the total number of rolls. \nTotal number of rolls = {0}.", numThrows);
+
             /*create a new dice instance*/
             var dice = new Dice();
+
             /*calculate the throws and print the histogram*/
             dice.CalculateThrows(numThrows);
 
